@@ -7,14 +7,12 @@ const App = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            if (loaded == false) {
-            setLoaded
-            }
+            setLoaded(true)
           }, 3000);
     }, [loaded]
     );
 
-    if (loaded == false) {
+    if (loaded === false) {
         return (
             <>
             <h1>Website loading...</h1>
